@@ -1,0 +1,2 @@
+set(SOURCE_LIB "${CMAKE_CURRENT_SOURCE_DIR}/lib.cpp")
+add_library(B SHARED ${SOURCE_LIB})
