@@ -1,1 +1,0 @@
-/home/maria/code/study/mipt-build-systems/task3/toolchain/gcc-linaro-i686_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ --sysroot=/home/maria/code/study/mipt-build-systems/task3/sysroot    -rdynamic CMakeFiles/Main.dir/main.cpp.o  -o ../bin/Main -Wl,-rpath,"\$ORIGIN/../lib" 
