@@ -15,6 +15,9 @@ add_executable(MainLib main_lib.cpp)
 target_link_libraries(MainLib buffer)
 
 
-install(TARGETS Main MainLib
+install(TARGETS Main MainLib 
         RUNTIME DESTINATION bin
-        LIBRARY DESTINATION lib)
+)
+
+install(DIRECTORY include/ DESTINATION include)
+    
