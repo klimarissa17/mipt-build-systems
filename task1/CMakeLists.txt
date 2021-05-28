@@ -26,5 +26,4 @@ add_executable(main ${SOURCE_EXE})
 target_include_directories(main PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")
 target_link_libraries(main index)
 target_link_libraries(main B)
-# set_target_properties(B PROPERTIES LINKER_LANGUAGE CXX)
 

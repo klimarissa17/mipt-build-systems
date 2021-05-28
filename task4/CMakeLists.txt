@@ -11,7 +11,6 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 set(source_dir ${CMAKE_CURRENT_SOURCE_DIR})
 add_custom_command(
-    # WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/include"
     COMMAND ${PYTHON3_EXECUTABLE} ${source_dir}/gen_matrix.py ${source_dir}/map.png ${CMAKE_CURRENT_BINARY_DIR}/matrix.h
     OUTPUT  "${CMAKE_CURRENT_BINARY_DIR}/matrix.h"
 )
