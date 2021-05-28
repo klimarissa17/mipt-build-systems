@@ -1,0 +1,1 @@
+/home/maria/code/study/mipt-build-systems/task3/toolchain/gcc-linaro-i686_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ --sysroot=/home/maria/code/study/mipt-build-systems/task3/sysroot -fPIC   -shared -Wl,-soname,libbuffer.so -o ../../lib/libbuffer.so CMakeFiles/buffer.dir/buffer.cpp.o 
