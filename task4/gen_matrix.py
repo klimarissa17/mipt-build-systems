@@ -8,20 +8,20 @@ using std::vector;
 
 vector<vector<vector<int>>> matrix = { 
 """
-if len(sys.argv) >= 2:
-    matrix = sys.argv[1]
-else:
-    matrix = 'map.png'
 
-transform = cv2.imread("map.png") 
+# axes order: line(from higher to lower), pos, channel 
+# channels order: blue, green, red. cuz it's opencv, that's why.
 
-#axes order: line(from lower to higher), pos, channel 
-if len(sys.argv) >= 3:
-    path = sys.argv[2]
-else:
-    path = 'matrix.h'
+if len(sys.argv) != 3:
+    print("Wrong number of arguments for the code generation script. You probably should check your custom command in CMakeLists.txt")
+    exit(1)
 
-with open(path, 'w') as file: 
+matrix = sys.argv[1]
+header_path = sys.argv[2]
+
+transform = cv2.imread(matrix) 
+
+with open(header_path, 'w') as file: 
     file.write(part1)
     for i in range(256):
         file.write('{')
